@@ -125,7 +125,15 @@ You can find the inputs to the particle filter in the `data` directory.
 2. y position
 3. landmark id
 
-### All other data the simulator provides, such as observations and controls.
+#### Control Data
+1. vehicle speed
+2. vehicle yaw rate
+
+#### Observation Data
+1. x distance to the landmark
+2. y distance to the landmark
+
+### All the data the simulator provides, such as observations and controls.
 
 > * Map data provided by 3D Mapping Solutions GmbH.
 
@@ -138,6 +146,17 @@ The things the grading code is looking for are:
 1. **Accuracy**: your particle filter should localize vehicle position and yaw to within the values specified in the parameters `max_translation_error` and `max_yaw_error` in `src/main.cpp`.
 
 2. **Performance**: your particle filter should complete execution within the time of 100 seconds.
+
+## Result
+```
+Time Step: 2,443.00
+System Time: 53.38
+
+Error: x .121 y .119 yaw .004
+
+** Success! Your particle filter passed! **
+```
+
 
 ## How to write a README
 A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
